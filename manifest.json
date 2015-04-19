@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "nearlinks",
+  "description": "This extension allows saving bookmarks",
+  "version": "0.0.0",
+  "author": {
+    "name": "GochoMugo",
+    "email": "mugo@forfuture.co.ke"
+  },
+  "icons": {
+    "128": "assets/images/chain-link.png"
+  },
+  "page_action": {
+    "default_icon": "assets/images/chain-link.png",
+    "default_title": "nearlinks",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "assets/reqwest/reqwest.min.js",
+      "dropbox.js",
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["popup.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "bookmarks",
+    "storage",
+    "tabs",
+    "https://api.dropbox.com/*"
+  ],
+  "web_accessible_resources": [
+    "www/authenticate.html"
+  ]
+}
