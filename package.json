@@ -7,10 +7,5 @@
   "homepage": "https://github.com/forfuture-dev/nearlinks",
   "bugs": "https://github.com/forfuture-dev/nearlinks/issues",
   "license": "MIT",
-  "dependencies": {
-    "angular": "latest",
-    "dropstore-ng": "AnalogJ/dropstore-ng",
-    "reqwest": "latest"
-  },
   "private": true
 }
