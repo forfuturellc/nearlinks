@@ -1,0 +1,16 @@
+{
+  "name": "nearlinks",
+  "version": "0.0.0",
+  "description": "handle bookmarks across browsers",
+  "keywords": ["bookmark", "chrome", "dropbox"],
+  "author": "GochoMugo <mugo@forfuture.co.ke>",
+  "homepage": "https://github.com/forfuture-dev/nearlinks",
+  "bugs": "https://github.com/forfuture-dev/nearlinks/issues",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "latest",
+    "dropstore-ng": "AnalogJ/dropstore-ng",
+    "reqwest": "latest"
+  },
+  "private": true
+}
