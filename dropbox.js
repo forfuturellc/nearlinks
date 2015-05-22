@@ -83,3 +83,26 @@ function getDataSnapshot(handle, callback) {
   });
 }
 
+
+/**
+* Adds a Bookmark
+*
+* @param <url> -- {String} datastore handle
+* @param <url> -- {String} bookmark's url
+*/
+function addBookmark(storehandle, url) {
+  getToken(function(token) {
+    reqwest({
+      url: "https://api.dropbox.com/1/datastores/put_delta",
+      type: "json",
+      headers: {
+        Authorization: "Bearer " + token
+      },
+      data: {
+        handle: storehandle,
+        changes: []
+      }
+    });
+  });
+}
+
